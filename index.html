@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomonedas en Bolivia</title>
+    <style>
+        /* General  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .text-block {
+            padding: 4rem;
+            margin: 0 10rem;
+        }
+
+        iframe {
+            z-index: 0;
+            border: none;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+
+        /* Scrollama style */
+
+        .scrolly {
+            position: relative;
+            padding: 0.1px;
+        }
+
+        .figure__full {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .figure__semifull {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            left: 20%;
+            height: 100vh;
+            width: 80vw;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .article__center {
+            position: relative;
+            padding: 0;
+            max-width: 30rem;
+            margin: 0 auto;
+            z-index: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .article__left {
+            position: relative;
+            padding: 0;
+            max-width: 30rem;
+            margin: 0 auto;
+            right: 20%;
+            z-index: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+
+        }
+
+        .step {
+            margin: 40rem auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.25em;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 20%) 0px 0px 10px;
+            color: black;
+            z-index: 1;
+
+        }
+
+        /* Images */
+        .image__full {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            max-height: 100vh;
+            max-width: 100vw;
+        }
+
+        .image__center {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            max-height: 100vh;
+            max-width: 100vw;
+            padding: 2rem;
+        }
+
+        /* Media queries */
+
+        @media screen and (max-width: 600px) {
+            .figure__full {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .figure__semifull {
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .article__center {
+                max-width: 20rem;
+                margin: 0 auto;
+            }
+
+            .article__left {
+                max-width: 20rem;
+                margin: 0 auto;
+                right: 0;
+            }
+
+            .step {
+                margin: 30rem auto;
+            }
+            
+           
+        }
+
+
+        #intro-fig {
+            position: relative;
+        }
+
+        #cinta {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            z-index: 2;
+            color: white;
+            padding: 1rem;
+        }
+        #intro-video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .overlay-2 {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            background-color: rgba(0, 0, 0, 0.09);
+            z-index: 1;
+            position: absolute;
+        }
+    </style>
+    <script src="https://unpkg.com/scrollama"></script>
+</head>
+
+<body>
+    <main>
+
+        <section id="intro" class="scrolly">
+            <figure id="intro-fig" class="figure__full">
+                <div class="overlay"></div>
+                <img src="1-criptomonedas.gif" class="image__full"></div>
+
+
+            </figure>
+            <div id="cinta">
+                <div style="margin: 2rem 1rem">
+                    <h1 style="text-align:center">Criptomonedas y estafas digitales en Bolivia </h1>
+                    <h3 style="text-align:right">Por: Patricia Delgadillo</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="scrolly">
+            <figure class="figure__semifull">
+                <img src="bitcoin-03.gif" class="image__center" style="width: 50%;">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p> Las criptomonedas han revolucionado el mundo financiero, creando un mercado
+                        que atrae a los inversores más audaces y arriesgados.</p>
+                </div>
+                 <div class="step" data-step="2">
+                    <p>Aunque hay varios casos de inversiones exitosas en el mundo de las criptomonedas, muchos inversores han sido víctimas de estafas y ciberdelincuencia.</p>
+                </div>
+                <div class="step" data-step="3">
+                    <p>¿Qué caracteriza a las inversiones en Bitcoin y cómo son las estafas bitcoin en Bolivia?</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly" data-flourishid="1854408">
+            <figure class="figure__semifull">
+                <iframe scrolling="no" src="https://flo.uri.sh/story/1854408/embed#slide-0"
+                    class="image__full"></iframe>
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="0">
+                    <h1>Bitcoin: un mercado volátil y arriesgado</h1>
+                    <p>En este gráfico puedes ver los precios de las dos criptomonedas más importantes en el mercado: Bitcoin y Ethereum.</p>
+                </div>
+                <div class="step" data-step="1">
+                    <p>En el caso de Bitcoin (en azul), podemos ver que su precio creció enormemente entre 2020 y 2021, pero para 2022, sufrió una caída estrepitosa, lo que afectó a miles de inversores.
+                </div>
+                <div class="step" data-step="2">
+                    <p>De manera similar, Ethereum (en amarillo), ha tenido un gran crecimiento entre 2020 y 2021, pero para 2022, su valor cayó, aunque no de una manera tan dramática como Bitcoin.</p>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="scrolly">
+            <figure class="figure__full">
+
+                <iframe style="padding-top: 15rem" class="image__full"
+                    src="https://www.widgets.investing.com/top-cryptocurrencies?theme=lightTheme" width="100%"
+                    height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>Las subidas y bajadas abruptas en el precio de las cripto no solamente están presentes en Bitcoin y Ethereum. Criptomonedas competidoras, como
+                        Tether, Cardano y Binance también son volátiles.</p>
+                </div>
+
+
+                <div class="step">
+                    <p>Este es el Ranking de las 10 criptomonedas más populares hasta el viernes 10 de marzo de 2023, según investing.com.  Los números rojos manifiestan una caída diaria y semanal. Lo que confirma la alta volatilidad de
+                        estos activos. </p>
+
+                </div>
+                <div class="step">
+
+                    <p>Invertir en bitcoin es arriesgado, porque los precios de las monedas pueden cambiar muy rápido de un día para el otro. Si no tienes la paciencia o el ánimo para ingresar a este mercado, mejor
+                        mantente alejado.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__semifull">
+                <img src="bitcoin_esta_en_bolivia.jpg" class="image__full">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="0">
+                    <h2>Criptomonedas en Bolivia</h2>
+                    <p> <br>En Bolivia, las criptomonedas se popularizaron y ganaron atención mediática a partir de
+                            2017.</p>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="scrolly">
+            <figure class="figure__semifull">
+                <img src="RS_cripto.jpg" class="image__full">
+            </figure>
+
+            <article class="article__left">
+                <div class="step" data-step="0">
+                    <p>El posible uso de monedas electrónicas preocupó al gobierno, que a
+                        través del Banco Central emitió la Resolución No. 144/2020 de 15 de diciembre de
+                        2020, prohibiendo el uso de criptoactivos en el país.</p>
+                </div>
+                <div class="step" data-step="2">
+                    <p>Con esta resolución Bolivia forma parte de la lista de los 7 países que prohíben el uso y circulación de criptomonedas, junto a
+                        Argelia, China, Egipto, Kosovo, Marruecos y Nepal.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__semifull">
+                <img src="criptomoneda_prohibida_2.jpg" class="image__center"></div>
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>Si bien las instituciones financieras del país tienen prohibido utilizar criptomonedas; la Autoridad del Sistema Financiero (ASFI) permite a los individuos usarlas e invertir en ellas bajo su propio riesgo.</p>
+                </div>
+                <div class="step" data-step="2">
+                    <p>Y como los individuos no tienen prohibido, invertir o comprar criptomonedas, algunos se dan
+                        formas.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="inversor_1.jpg" class="image__center">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="2">
+                    <p> Te presento a José (nombre ficticio), decidió invertir algo de sus ahorros en criptomonedas.</p>
+                    <p>Había oído hablar de la fiebre del oro digital y estaba convencido de que si invertía
+                        podría hacer crecer su dinero.</p>
+                        <div style="text-align: right;">
+                            <img src="grow-money.gif" width="80%" height="100%">
+                    
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__semifull">
+                <img src="inversor_2.jpg" class="image__center" frameborder="0" allowtransparency="true" marginwidth="0"
+                    marginheight="5"></div>
+            </figure>
+            <figure class="figure__full">
+                <div style="text-align: right;">
+                    <img src="exchange-c.gif" class="image__center">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>Se registró en varias plataformas de intercambio y comenzó a comprar y vender
+                        criptomonedas como Bitcoin y Ethereum.</p>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="inversor_1_2.jpg" class="image__center">
+            </figure>
+            <figure class="figure__full">
+                <div style="text-align: right;">
+                    <img src="crypto-1.gif" class="image__center">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="3">
+                    <p> Al principio, todo parecía ir bien. Los precios de las criptomonedas subían y José estaba
+                        haciendo ganancias significativas.</p>
+                    <p> Pero luego...</p>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="inversor_4.jpg" class="image__center"">
+            </figure>
+            <figure class="figure__full">
+                <div style="text-align: right;">
+                    <img src="whatsapp.gif" class="image__center">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>José empezó a recibir mensajes por whatsapp de personas aparentemente expertas en criptomonedas,
+                        <b>prometiéndole ganancias aún mayores si invertía en sus proyectos </b>. Mensajes como estos:
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="cadena_wsp.jpg" class="image__center" style="width: 80%">
+            </figure>
+
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>José, que deseaba ganar aún más, decidió seguir el consejo de estos supuestos expertos y envió su dinero a la empresa de criptomonedas "Bitcoin Cash".</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="inversor_5.jpg" class="image__center">
+            </figure>
+
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>Hasta que un dia se pone a leer la prensa…</p>
+                </div>
+            </article>
+        
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="nota1.jpg" class="image__center">
+            </figure>
+
+            <article class="article__center">
+                <div class="step" data-step="1">
+                    <p>Y descubre que Bitcoin Cash era una gran estafa.</p>
+                </div>
+            </article>
+        </section>
+        <section class="scrolly" data-flourishid="1854402">
+            <figure class="figure__semifull">
+                <iframe scrolling="no" src="https://flo.uri.sh/story/1854402/embed#slide-0"
+                    class="image__full"></iframe>
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="0">
+                    <h1>Bolivia y las cripto estafas</h1>
+                    <p>En Bolivia, tras una revisión de los primeros 35 resultados en Google con las palabras clave “Estafas
+                de criptomonedas en Bolivia”, nos muestran estos resultados.</p>
+                </div>
+
+                <div class="step" data-step="1">
+                    <p>En primer lugar, se nos presentan resultados enfocados en la prevención, transmitir alertas sobre posibles estafas y reiterar la prohibición de los criptoactivos en Bolivia.</p>
+                </div>
+
+
+                <div class="step" data-step="2">
+                    <p>También encontramos noticias sobre estafas de criptomonedas, usualmente referidas a esquemas de ponzi que operan en nuestro territorio.</p>
+                </div>
+
+                <div class="step" data-step="3">
+                    <p>También hay varias entradas de blog que fomentan y enseñan sobre las criptomonedas, criticando las prohibiciones gubernamentales.</p>
+                </div>
+
+                <div class="step" data-step="4">
+                    <p>Por último, también hay anuncios de abogados bolivianos ofreciendo sus servicios para recuperar el dinero de los inversores tras una estafa.</p>
+                </div>
+
+            </article>
+        </section>
+   
+        <section class="scrolly">
+            <figure class="figure__full">
+                <img src="inversor_6.jpg" class="image__center">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="1">
+                    <p>La empresa Bitcoin Cash resultó ser una estafa. José, ansioso, se puso a buscar más información
+                        en internet, a llamar a sus contactos, pero nada. Al ser un <b>activo sin regulación, anónimo y
+                            prohibido en Bolivia</b>, no hay medios legales para recuperar su dinero.</p>
+                </div>
+
+                <div class="step" data-step="2">
+                    <p>Como indica Juan Carlos Layme, docente de la carrera de economía de la UPEA: “Invertir en criptomonedas como el Bitcoin no es algo seguro, <b>su valor es muy cambiante, ahora
+                        puede costar miles y mañana solo valer unos cuantos pesos,</b> en lugar de ganar se puede
+                    perder”.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly" data-flourishid="1854380">
+            <figure class="figure__full">
+                <iframe scrolling="no" src="https://flo.uri.sh/story/1854380/embed#slide-0"
+                    class="image__center"></iframe>
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="0">
+                    <h1>Aspectos en común de las estafas en criptomonedas</h1>
+                    <p>Engañan a las víctimas para que realicen depósitos o inversiones en cuentas o sitios web
+                        falsos.</p>
+                </div>
+
+                <div class="step" data-step="1">
+                    <p>Prometen ganancias rápidas y exageradas en un corto período de tiempo, como triplicar o
+                        duplicar el dinero invertido en 60 o 72 días.</p>
+                </div>
+
+                <div class="step" data-step="2">
+                    <p>Operan a través de cadenas de whatsapp, o en grupos cerrados.</p>
+                </div>
+
+                <div class="step" data-step="3">
+                    <p>Esquemas Ponzi: en los que los retornos(o ganancias) se pagan con el dinero de los
+                        inversores más nuevos, en lugar de con ganancias reales.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="scrolly">
+            <figure class="figure__semifull">
+                <img src="bitcoin1.gif" weight="550" height="400">
+            </figure>
+            <article class="article__left">
+                <div class="step" data-step="2">
+                    <h1>Conclusiones</h1>
+                    <p>Entrar a este mundo volátil, puede requerir de una dosis de paciencia, si crees que no puedes
+                        lidiar con las subidas y bajadas de su precio, es mejor que lo evites.
+                        Es claro que es un activo destinado solo a quienes pueden afrontar una eventual pérdida de todo
+                        el capital invertido.</p>
+                    <p>La precaución y la educación son claves para evitar ser víctima de los fraudes y estafas que
+                        rodean a las monedas digitales.</p>
+                </div>
+                <div class="step" data-step="3">
+                    <p>Y tú qué opinas ¿Vale la pena el riesgo? ¿Has recibido alguna vez una cadena de whatsapp
+                        relacionada a criptomonedas? ¿Conoces a algún familiar que haya caído en este sistema de estafa?
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const scroller = scrollama();
+
+        function handleStepEnter(response) {
+            const { element, index, direction } = response;
+            if (element.dataset.step) {
+                const id = element.parentElement.parentElement.dataset.flourishid;
+                const link = `https://flo.uri.sh/story/${id}/embed#slide-`;
+                const slide = element.dataset.step;
+                document.querySelector(`section[data-flourishid="${id}"] iframe`)
+                    .setAttribute('src', link + slide);
+            }
+        }
+
+        function handleStepExit(response) {
+            const { element, index, direction } = response;
+        }
+
+        function init() {
+            scroller
+                .setup({
+                    step: ".step",
+                    offset: 0.5,
+                    debug: false
+                }).onStepEnter(handleStepEnter)
+                .onStepExit(handleStepExit);
+
+            window.addEventListener("resize", scroller.resize);
+        }
+        init();
+
+    </script>
+</body>
+
+</html>
